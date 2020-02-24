@@ -1,0 +1,4 @@
+# vim: set ft=ansible
+---
+- name: Check that you can connect to JupyterHub
+    url: https://jupyterhub-opendatahub-user{{user_name}}.apps.cluster-{{guid}}.{{guid}}.example.opentlc.com

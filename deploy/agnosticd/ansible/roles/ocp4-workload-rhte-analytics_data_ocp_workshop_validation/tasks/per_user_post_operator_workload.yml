@@ -1,0 +1,8 @@
+# vim: set ft=ansible
+---
+# Implement your Workload deployment tasks here
+# Leave this as the last task in the playbook.
+- name: "{{ user_name }} tasks complete"
+  debug:
+    msg: "{{ user_name }} Tasks completed successfully."
+  when: not silent|bool
